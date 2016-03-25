@@ -16,7 +16,5 @@ RUN apk --update add \
       pip install --upgrade awscli s3cmd && \
       mkdir /root/.aws
 
-COPY get-metadata /usr/local/bin/get-metadata
-
 # Expose data volume
 VOLUME /apps
